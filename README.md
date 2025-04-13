@@ -1,4 +1,14 @@
-# PoC-APIS
+# # Pruebas de Consumo de Web API en Diferentes Plataformas (.NET)
+##  Resumen de Pruebas
+
+| Prueba | Plataforma | Tecnología | Descripción |
+|--------|------------|------------|-------------|
+| Nº1 | Web API | ASP.NET Core | Endpoint que saluda por nombre |
+| Nº2 | Escritorio | Windows Forms | App que pide nombre y consume API |
+| Nº3 | Web App | ASP.NET MVC | App web que llama al API por POST/GET |
+| Nº4 | Worker Service | .NET Core + MailKit | Servicio que envía saludos por correo cada minuto |
+| Nº5 | Móvil | .NET MAUI | App Android que muestra el saludo |
+
 ### IDE: Visual Studio 
 ### TECNOLOGIAS:
 - **ASP.NET Core Web API (.NET 6/7)**
@@ -95,14 +105,33 @@ Podemos ver que si se esta ejecutando de manera correcta y enviando los saludos 
 
 # PRUEBA Nº5 - Aplicación movil: igual, pide su nombre y le saluda con su nombre (consumiendo el API)
 
-Para esta `PoC` crearemos un proyecto utilizando `.NET MAUI App (Multi-platform App UI)` y editaremos 
+Para esta `PoC` crearemos un proyecto utilizando `.NET MAUI App (Multi-platform App UI)` y editaremos algunos archivos para permitir trajar correctamente:
 `MainPage.xaml.cs`
-![MainPage.xaml.cs]()
+![MainPage.xaml.cs](https://github.com/Harley25-sys/PoC-APIS/blob/main/images/MainPage_xaml_cs.png)
 
 y `MainPage.xaml`
-![mainpage_xaml]()
+![mainpage_xaml](https://github.com/Harley25-sys/PoC-APIS/blob/main/images/mainpage_xaml.png)
 
-Son códigos basados en la misma logica que los anteriores
+Son códigos basados en la misma logica que los anteriores, un archivo importante para no tener errores es `Android_Manifest.xml`
+
+![android_manifest_xml](https://github.com/Harley25-sys/PoC-APIS/blob/main/images/Android_Manifest.png)
+
+Una vez configurado todo `Ejecutamos`
+
+Primero probamos en la web para ver si se esta comunicando de manera correcta con la API
+
+![ejecucion_web](https://github.com/Harley25-sys/PoC-APIS/blob/main/images/Ejecucion_Web.png)
+
+Como no tenemos problemas, se esta aplicando el consumo correcto en `web`
+Ahora ejecutamos en La Aplicación de XAML DE MAUI
+
+![ejecucion_app](https://github.com/Harley25-sys/PoC-APIS/blob/main/images/ejecucion_android.png)
+
+Podemos ver que si esta consumiento de manera correcta en la aplicacion de MAUI, se estan tramitando las peticiones HTTP correctamente hacia la API
+
+![prueba2_app](https://github.com/Harley25-sys/PoC-APIS/blob/main/images/ejecucion_android2.png)
+
+# GRACIAS
 
 
 
