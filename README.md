@@ -1,21 +1,21 @@
-# # Pruebas de Consumo de Web API en Diferentes Plataformas (.NET)
+# Pruebas de Consumo de Web API en Diferentes Plataformas (.NET)
 ##  Resumen de Pruebas
 
 | Prueba | Plataforma | Tecnología | Descripción |
 |--------|------------|------------|-------------|
-| Nº1 | Web API | ASP.NET Core | Endpoint que saluda por nombre |
+| Nº1 | Web API | ASP.NET Core - Swagger | Endpoint que saluda por nombre |
 | Nº2 | Escritorio | Windows Forms | App que pide nombre y consume API |
 | Nº3 | Web App | ASP.NET MVC | App web que llama al API por POST/GET |
 | Nº4 | Worker Service | .NET Core + MailKit | Servicio que envía saludos por correo cada minuto |
 | Nº5 | Móvil | .NET MAUI | App Android que muestra el saludo |
 
-### IDE: Visual Studio 
+### IDE: Visual Studio 2022 
 ### TECNOLOGIAS:
-- **ASP.NET Core Web API (.NET 6/7)**
-- **MAUI (.NET 7, emulador Android)**
-- **Windows Forms (.NET 6)**
+- **ASP.NET Core Web API (.NET 8,9)**
+- **MAUI (.NET 8, emulador Android)**
+- **Windows Forms (.NET 8)**
 - **ASP.NET Core MVC (para la app web)**
-- **Worker Service (para tareas en segundo plano)**
+- **Worker Service (Ejeución de tareas)**
 - **MailKit (envío de correos)**
 - **Swagger (documentación y pruebas de API)**
 
